@@ -4,6 +4,7 @@ package com.redice_inc.jinyounggallery;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,12 +28,16 @@ public class GalleryFullViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery_full_view);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Intent intent = getIntent();
+        String originalImageUrl = intent.getStringExtra(MainActivity.GALLERY_ORIGINAL_IMAGE_URL);
+        String name = intent.getStringExtra(MainActivity.GALLERY_NAME);
+
+        ActionBar actionBar = getSupportActionBar();
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle(name);
 
         ImageView originalImageView = (ImageView) findViewById(R.id.original_image);
-
-        Intent intent = getIntent();
-        String originalImageUrl = intent.getStringExtra(MainActivity.ORIGINAL_IMAGE_URL);
 
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress);
 

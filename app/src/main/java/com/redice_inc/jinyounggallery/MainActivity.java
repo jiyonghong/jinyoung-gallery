@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Gallery> galleryList = new ArrayList<Gallery>();
     private GalleryAdapter galleryAdapter;
 
-    public final static String ORIGINAL_IMAGE_URL = "com.redice_inc.jinyounggallery.ORIGINAL_IMAGE_URL";
+    public final static String GALLERY_ORIGINAL_IMAGE_URL = "com.redice_inc.jinyounggallery.ORIGINAL_IMAGE_URL";
+    public final static String GALLERY_NAME = "com.redice_inc.jinyounggallery.NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position, View view, Gallery gallery) {
                 Intent intent = new Intent(view.getContext(), GalleryFullViewActivity.class);
-                intent.putExtra(ORIGINAL_IMAGE_URL, gallery.getOriginalImageUrl());
+                intent.putExtra(GALLERY_ORIGINAL_IMAGE_URL, gallery.getOriginalImageUrl());
+                intent.putExtra(GALLERY_NAME, gallery.getName());
                 view.getContext().startActivity(intent);
             }
         });
