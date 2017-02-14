@@ -15,10 +15,10 @@ Hong Jin Young Gallery
 
 
 ### Helpful Links
-- [http://abhiandroid.com/ui/gridview](Gridview Tutorial)
-- [https://dzone.com/articles/optimizing-your-listview](Optimizing Your Listview)
-- [https://guides.codepath.com/android/Endless-Scrolling-with-AdapterViews-and-RecyclerView](Infinite Scrolling with Adapter)
-- [http://www.vogella.com/tutorials/Retrofit/article.html](Retrofit2 Tutorial)
-- [https://zeroturnaround.com/rebellabs/getting-started-with-retrofit-2/](Retrofit2 Android Tutorial)
-- [https://developer.android.com/training/basics/firstapp/starting-activity.html](Starting Another Activity)
-- [https://developer.android.com/training/implementing-navigation/temporal.html](Implementing Navigation)
+- [Gridview Tutorial](http://abhiandroid.com/ui/gridview)
+- [Optimizing Your Listview](https://dzone.com/articles/optimizing-your-listview)
+- [Infinite Scrolling with Adapter](https://guides.codepath.com/android/Endless-Scrolling-with-AdapterViews-and-RecyclerView)
+- [Retrofit2 Tutorial](http://www.vogella.com/tutorials/Retrofit/article.html)
+- [Retrofit2 Android Tutorial](https://zeroturnaround.com/rebellabs/getting-started-with-retrofit-2/)
+- [Starting Another Activity](https://developer.android.com/training/basics/firstapp/starting-activity.html)
+- [Implementing Navigation](https://developer.android.com/training/implementing-navigation/temporal.html)
